@@ -1,0 +1,32 @@
+/* VaultX: 最近文件行 成功 / 失败 高亮动画 */
+.vaultx-row-flash-success {
+  animation: vaultx-flash-success 0.9s ease-out 1;
+}
+
+.vaultx-row-flash-error {
+  animation: vaultx-flash-error 0.9s ease-out 1;
+}
+
+@keyframes vaultx-flash-success {
+  0% {
+    background-color: rgba(16, 185, 129, 0.18); /* 绿光 */
+  }
+  40% {
+    background-color: rgba(16, 185, 129, 0.32);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes vaultx-flash-error {
+  0% {
+    background-color: rgba(248, 113, 113, 0.24); /* 红光 */
+  }
+  40% {
+    background-color: rgba(248, 113, 113, 0.38);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
